@@ -1,0 +1,69 @@
+body {
+  background-color: black;
+  transition: background-color 0.5s;
+  animation-delay: 0.5s;
+}
+
+div {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+div:hover {
+  opacity: 1;
+}
+
+li {
+  cursor: pointer;
+  color: white;
+  font-style: bold;
+  font-size: 14px;
+}
+
+.vdb {
+  background-color: #247BA0;
+  animation: vdb 60s infinite;
+}
+
+.mrs-brain {
+  background-color: #D8E2DC;
+  animation: vdb 60s infinite;
+}
+
+.sunny {
+  background-color: #CC5803;
+  animation: sunny 30s infinite;
+}
+
+.rainy {
+  background-color: #FBFBF2;
+  animation: rainy 30s infinite;
+}
+
+@keyframes vdb {
+  20% { background-color: #70C1B3; } 
+  40% { background-color: #B2DBBF; } 
+  60% { background-color: #F3FFBD; } 
+  80% { background-color: #FF1654; } 
+}
+
+@keyframes mrs-brain {
+  20% { background-color: #FFE5D9; } 
+  40% { background-color: #FFCAD4; } 
+  60% { background-color: #F4ACB7; } 
+  80% { background-color: #9D8189; } 
+}
+
+@keyframes sunny {
+  20% { background-color: #E2711D; } 
+  40% { background-color: #FF9505; } 
+  60% { background-color: #FFB627; } 
+  80% { background-color: #FFC971; } 
+}
+
+@keyframes rainy {
+  20% { background-color: #E5E6E4; } 
+  40% { background-color: #CFD2CD; } 
+  60% { background-color: #A6A2A2; } 
+  80% { background-color: #847577; } 
+}
