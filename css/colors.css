@@ -20,14 +20,14 @@ li {
   font-size: 14px;
 }
 
-.vdb {
-  background-color: #247BA0;
-  animation: vdb 60s infinite;
+.pastel {
+  background-color: #f29cfd;
+  animation: pastel 60s infinite;
 }
 
-.mrs-brain {
-  background-color: #D8E2DC;
-  animation: vdb 60s infinite;
+.pink {
+  background-color: #ffe2f3;
+  animation: pink 30s infinite;
 }
 
 .sunny {
@@ -37,21 +37,46 @@ li {
 
 .rainy {
   background-color: #FBFBF2;
-  animation: rainy 30s infinite;
+  animation: rainy 20s infinite;
 }
 
-@keyframes vdb {
-  20% { background-color: #70C1B3; } 
-  40% { background-color: #B2DBBF; } 
-  60% { background-color: #F3FFBD; } 
-  80% { background-color: #FF1654; } 
+.forest {
+  background-color: #19270d;
+  animation: forest 60s infinite;
 }
 
-@keyframes mrs-brain {
-  20% { background-color: #FFE5D9; } 
-  40% { background-color: #FFCAD4; } 
-  60% { background-color: #F4ACB7; } 
-  80% { background-color: #9D8189; } 
+.citrus {
+  background-color: #faffa7;
+  animation: citrus 30s infinite;
+}
+
+.blues {
+  background-color: #08146b;
+  animation: blues 60s infinite;
+}
+
+.midnight-kisses {
+  background-color: #d867d8;
+  animation: midnight-kisses 60s infinite;
+}
+
+.midnight-skyscrappers {
+  background-color: #75599b;
+  animation: midnight-skyscrappers 60s infinite;
+}
+
+@keyframes pastel {
+  20% { background-color: #aae8ff; } 
+  40% { background-color: #c2ffe5; } 
+  60% { background-color: #e7ffb3; } 
+  80% { background-color: #ffc8c8; } 
+}
+
+@keyframes pink {
+  20% { background-color: #ffc6ed; } 
+  40% { background-color: #ffb5eb; } 
+  60% { background-color: #ffa1e1; } 
+  80% { background-color: #ff89df; } 
 }
 
 @keyframes sunny {
@@ -66,4 +91,39 @@ li {
   40% { background-color: #CFD2CD; } 
   60% { background-color: #A6A2A2; } 
   80% { background-color: #847577; } 
+}
+
+@keyframes forest {
+  20% { background-color: #25591f; } 
+  40% { background-color: #818c3c; } 
+  60% { background-color: #72601b; } 
+  80% { background-color: #593a0e; } 
+}
+
+@keyframes citrus {
+  20% { background-color: #ffe578; } 
+  40% { background-color: #e4f9a9; } 
+  60% { background-color: #c7e77e; } 
+  80% { background-color: #ffeb98; } 
+}
+
+@keyframes blues {
+  20% { background-color: #20227a; } 
+  40% { background-color: #293590; } 
+  60% { background-color: #2f37ae; } 
+  80% { background-color: #4261a3; } 
+}
+
+@keyframes midnight-kisses {
+  20% { background-color: #ab41bd; } 
+  40% { background-color: #7f41bd; } 
+  60% { background-color: #4941bd; } 
+  80% { background-color: #25389a; } 
+}
+
+@keyframes midnight-skyscrappers {
+  20% { background-color: #453857; } 
+  40% { background-color: #231e14; } 
+  60% { background-color: #ac7c12; } 
+  80% { background-color: #f9d035; } 
 }
