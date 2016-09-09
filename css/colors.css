@@ -35,9 +35,9 @@ li {
   animation: sunny 30s infinite;
 }
 
-.rainy {
+.cloudy {
   background-color: #FBFBF2;
-  animation: rainy 20s infinite;
+  animation: cloudy 20s infinite;
 }
 
 .forest {
@@ -86,7 +86,7 @@ li {
   80% { background-color: #FFC971; } 
 }
 
-@keyframes rainy {
+@keyframes cloudy {
   20% { background-color: #E5E6E4; } 
   40% { background-color: #CFD2CD; } 
   60% { background-color: #A6A2A2; } 
