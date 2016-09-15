@@ -1,21 +1,22 @@
 body {
-  background-color: black;
+  background-color: cyan;
   transition: background-color 0.5s;
   animation-delay: 0.5s;
 }
 
-div {
+#menu {
+  position: absolute;
+  z-index: 10;
   opacity: 0;
   transition: opacity 0.5s;
 }
 
-div:hover {
+#menu:hover {
   opacity: 1;
 }
 
 li {
   cursor: pointer;
-  color: white;
   font-style: bold;
   font-size: 14px;
 }

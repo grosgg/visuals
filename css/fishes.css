@@ -1,0 +1,39 @@
+#tuna {
+  width: 100px;
+  height: 130px;
+  position: absolute;
+  top: 10%;
+  background: url(../images/tuna.svg);
+  background-size: contain;
+  animation: tuna-swim 15s infinite;
+}
+
+#sperm-whale {
+  width: 800px;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  background: url(../images/sperm_whale.svg);
+  background-size: contain;
+  animation: sperm-whale-swim 60s infinite;
+}
+
+#coral {
+  width: 200px;
+  height: 250px;
+  position: absolute;
+  bottom: -80px;
+  left: 20%;
+  background: url(../images/coral.svg);
+  background-size: contain;
+}
+
+@keyframes tuna-swim {
+  from { right: calc(0% - 100px); }
+  to { right: calc(100% + 100px); }
+}
+
+@keyframes sperm-whale-swim {
+  from { right: calc(0% - 800px); }
+  to { right: calc(100% + 800px); }
+}
