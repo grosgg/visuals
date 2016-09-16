@@ -1,37 +1,66 @@
 #tuna {
   width: 100px;
-  height: 130px;
+  height: 60px;
   position: absolute;
-  top: 10%;
+  top: 20%;
+  right: calc(0% - 100px);
   background: url(../images/tuna.svg);
   background-size: contain;
   animation: tuna-swim 15s infinite;
 }
 
+#turtle {
+  width: 150px;
+  height: 90px;
+  position: absolute;
+  top: 0%;
+  left: calc(0% - 150px);
+  background: url(../images/turtle.svg);
+  background-size: contain;
+  transform: scaleX(-1);
+  animation: turtle-swim 40s infinite;
+  animation-delay: 5s;
+}
+
+#fugu {
+  width: 160px;
+  height: 80px;
+  position: absolute;
+  bottom: 10%;
+  left: calc(0% - 160px);
+  background: url(../images/fugu.svg);
+  background-size: contain;
+  transform: scaleX(-1);
+  animation: fugu-swim 30s infinite;
+  animation-delay: 10s;
+}
+
 #sperm-whale {
   width: 800px;
-  height: 1000px;
+  height: 360px;
   position: absolute;
-  top: 0;
+  top: 30%;
+  right: calc(0% - 800px);
   background: url(../images/sperm_whale.svg);
   background-size: contain;
   animation: sperm-whale-swim 60s infinite;
+  animation-delay: 20s;
 }
 
 .coral {
   width: 100px;
-  height: 125px;
+  height: 70px;
   position: absolute;
-  bottom: -41px;
+  bottom: 0%;
   background: url(../images/coral.svg);
   background-size: contain;
 }
 
 .seaweed {
   width: 100px;
-  height: 125px;
+  height: 70px;
   position: absolute;
-  bottom: -41px;
+  bottom: 0%;
   background: url(../images/seaweed.svg);
   background-size: contain;
 }
@@ -65,6 +94,16 @@
 @keyframes tuna-swim {
   from { right: calc(0% - 100px); }
   to { right: calc(100% + 100px); }
+}
+
+@keyframes turtle-swim {
+  from { left: calc(0% - 150px); }
+  to { left: calc(100% + 150px); }
+}
+
+@keyframes fugu-swim {
+  from { left: calc(0% - 160px); }
+  to { left: calc(100% + 160px); }
 }
 
 @keyframes sperm-whale-swim {
