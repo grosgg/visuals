@@ -26,7 +26,7 @@
   width: 160px;
   height: 80px;
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: calc(0% - 160px);
   background: url(../images/fugu.svg);
   background-size: contain;
@@ -102,8 +102,11 @@
 }
 
 @keyframes fugu-swim {
-  from { left: calc(0% - 160px); }
-  to { left: calc(100% + 160px); }
+  0% { left: calc(0% - 160px); }
+  40% { transform: scale(-1, 1); }
+  60% { left: 50%; transform: scale(-1.5, 1.5); }
+  80% { transform: scale(-1, 1); }
+  100% { left: calc(100% + 160px); }
 }
 
 @keyframes sperm-whale-swim {
