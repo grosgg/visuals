@@ -2,6 +2,7 @@ body {
   background-color: cyan;
   transition: background-color 0.5s;
   animation-delay: 0.5s;
+  overflow: hidden;
 }
 
 #menu {

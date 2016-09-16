@@ -18,14 +18,48 @@
   animation: sperm-whale-swim 60s infinite;
 }
 
-#coral {
-  width: 200px;
-  height: 250px;
+.coral {
+  width: 100px;
+  height: 125px;
   position: absolute;
-  bottom: -80px;
-  left: 20%;
+  bottom: -41px;
   background: url(../images/coral.svg);
   background-size: contain;
+}
+
+.seaweed {
+  width: 100px;
+  height: 125px;
+  position: absolute;
+  bottom: -41px;
+  background: url(../images/seaweed.svg);
+  background-size: contain;
+}
+
+#coral-1 {
+  left: 20%;
+}
+
+#coral-2 {
+  right: 10%;
+}
+
+#seaweed-1 {
+  left: 30%;
+}
+
+#seaweed-2 {
+  right: 20%;
+}
+
+#seaweed-3 {
+  left: 0%;
+}
+
+@media screen and (max-width: 600px) {
+  #seaweed-1, #seaweed-2 {
+    display: none;
+  }
 }
 
 @keyframes tuna-swim {
