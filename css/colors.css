@@ -1,6 +1,11 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
 body {
-  background-color: cyan;
-  transition: background-color 0.5s;
+  background: linear-gradient(lightcyan, cyan, darkcyan);
+  transition: background 0.5s;
   animation-delay: 0.5s;
   overflow: hidden;
 }
@@ -23,109 +28,118 @@ li {
 }
 
 .pastel {
-  background-color: #f29cfd;
+  background: #f29cfd;
   animation: pastel 60s infinite;
 }
 
 .pink {
-  background-color: #ffe2f3;
+  background: #ffe2f3;
   animation: pink 30s infinite;
 }
 
+.sea {
+  background: lightcyan;
+  animation: sea 30s infinite;
+}
+
 .sunny {
-  background-color: #CC5803;
+  background: #CC5803;
   animation: sunny 30s infinite;
 }
 
 .cloudy {
-  background-color: #FBFBF2;
+  background: #FBFBF2;
   animation: cloudy 20s infinite;
 }
 
 .forest {
-  background-color: #19270d;
+  background: #19270d;
   animation: forest 60s infinite;
 }
 
 .citrus {
-  background-color: #faffa7;
+  background: #faffa7;
   animation: citrus 30s infinite;
 }
 
 .blues {
-  background-color: #08146b;
+  background: #08146b;
   animation: blues 60s infinite;
 }
 
 .midnight-kisses {
-  background-color: #d867d8;
+  background: #d867d8;
   animation: midnight-kisses 60s infinite;
 }
 
 .midnight-skyscrappers {
-  background-color: #75599b;
+  background: #75599b;
   animation: midnight-skyscrappers 60s infinite;
 }
 
 @keyframes pastel {
-  20% { background-color: #aae8ff; } 
-  40% { background-color: #c2ffe5; } 
-  60% { background-color: #e7ffb3; } 
-  80% { background-color: #ffc8c8; } 
+  20% { background: #aae8ff; }
+  40% { background: #c2ffe5; }
+  60% { background: #e7ffb3; }
+  80% { background: #ffc8c8; }
 }
 
 @keyframes pink {
-  20% { background-color: #ffc6ed; } 
-  40% { background-color: #ffb5eb; } 
-  60% { background-color: #ffa1e1; } 
-  80% { background-color: #ff89df; } 
+  20% { background: #ffc6ed; }
+  40% { background: #ffb5eb; }
+  60% { background: #ffa1e1; }
+  80% { background: #ff89df; }
+}
+
+@keyframes sea {
+  50% { background: cyan; }
 }
 
 @keyframes sunny {
-  20% { background-color: #E2711D; } 
-  40% { background-color: #FF9505; } 
-  60% { background-color: #FFB627; } 
-  80% { background-color: #FFC971; } 
+  20% { background: #E2711D; }
+  40% { background: #FF9505; }
+  60% { background: #FFB627; }
+  80% { background: #FFC971; }
 }
 
 @keyframes cloudy {
-  20% { background-color: #E5E6E4; } 
-  40% { background-color: #CFD2CD; } 
-  60% { background-color: #A6A2A2; } 
-  80% { background-color: #847577; } 
+  20% { background: #E5E6E4; }
+  40% { background: #CFD2CD; }
+  60% { background: #A6A2A2; }
+  80% { background: #847577; }
 }
 
 @keyframes forest {
-  20% { background-color: #25591f; } 
-  40% { background-color: #818c3c; } 
-  60% { background-color: #72601b; } 
-  80% { background-color: #593a0e; } 
+  20% { background: #25591f; }
+  40% { background: #818c3c; }
+  60% { background: #72601b; }
+  80% { background: #593a0e; }
 }
 
 @keyframes citrus {
-  20% { background-color: #ffe578; } 
-  40% { background-color: #e4f9a9; } 
-  60% { background-color: #c7e77e; } 
-  80% { background-color: #ffeb98; } 
+  20% { background: #ffe578; }
+  40% { background: #e4f9a9; }
+  60% { background: #c7e77e; }
+  80% { background: #ffeb98; }
 }
 
 @keyframes blues {
-  20% { background-color: #20227a; } 
-  40% { background-color: #293590; } 
-  60% { background-color: #2f37ae; } 
-  80% { background-color: #4261a3; } 
+  20% { background: #20227a; }
+  40% { background: #293590; }
+  60% { background: #2f37ae; }
+  80% { background: #4261a3; }
 }
 
 @keyframes midnight-kisses {
-  20% { background-color: #ab41bd; } 
-  40% { background-color: #7f41bd; } 
-  60% { background-color: #4941bd; } 
-  80% { background-color: #25389a; } 
+  20% { background: #ab41bd; }
+  40% { background: #7f41bd; }
+  60% { background: #4941bd; }
+  80% { background: #25389a; }
 }
 
 @keyframes midnight-skyscrappers {
-  20% { background-color: #453857; } 
-  40% { background-color: #231e14; } 
-  60% { background-color: #ac7c12; } 
-  80% { background-color: #f9d035; } 
+  20% { background: #453857; }
+  40% { background: #231e14; }
+  60% { background: #ac7c12; }
+  80% { background: #f9d035; }
 }
