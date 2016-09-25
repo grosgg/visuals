@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  background: linear-gradient(lightcyan, cyan, darkcyan);
+  background: black;
   transition: background 0.5s;
   animation-delay: 0.5s;
   overflow: hidden;
@@ -25,6 +25,7 @@ li {
   cursor: pointer;
   font-style: bold;
   font-size: 14px;
+  color: white;
 }
 
 .pastel {

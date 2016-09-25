@@ -1,3 +1,15 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(lightcyan, cyan, darkcyan);
+  transition: background 0.5s;
+  animation-delay: 0.5s;
+  overflow: hidden;
+}
+
 #tuna {
   width: 100px;
   height: 60px;
