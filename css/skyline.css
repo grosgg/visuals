@@ -1,0 +1,206 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(#000000, #0B0B61, #380B61);
+  overflow: hidden;
+}
+
+#moon {
+  width: 100px;
+  height: 100px;
+  background: #ffffcc;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+#road {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(#2E2E2E, #424242);
+}
+
+#road-line {
+  width:100%;
+  height:1px;
+  position: absolute;
+  bottom: 40px;
+  border:none;
+  border-top:10px dashed #BDBDBD;
+}
+
+#hijet {
+  width: 200px;
+  height: 70px;
+  position: absolute;
+  bottom: 60px;
+  left: calc(0% - 300px);
+  z-index: 2;
+  animation: hijet-drive 20s infinite;
+  animation-delay: 5s;
+}
+
+#hijet-back {
+  width:70px;
+  height:60px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: white;
+}
+
+#hijet-front-top {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0px;
+  left: 70px;
+  border-bottom: 30px solid white;
+  border-right: 30px solid transparent;
+}
+
+#hijet-front-bottom {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  left: 70px;
+  background: white;
+}
+
+.wheel {
+  width: 20px;
+  height: 20px;
+  background: black;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+#hijet-back-wheel {
+  left: 5px;
+}
+
+#hijet-front-wheel {
+  left: 75px;
+}
+
+#hijet-light {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 90px;
+  top: 15px;
+  z-index: -1;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 150px solid rgba(255, 255, 0, .4);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.big-building {
+  width: 150px;
+  height: 400px;
+  position: absolute;
+  bottom: 100px;
+  background: #1c1c1c;
+}
+
+.big-building-window {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffffcc;
+  display: none;
+}
+
+.medium-building {
+  width: 180px;
+  height: 220px;
+  position: absolute;
+  bottom: 100px;
+  background: #191919;
+}
+
+.small-building {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  bottom: 100px;
+  background: #161616;
+}
+
+.love-hotel {
+  width: 160px;
+  height: 300px;
+  position: absolute;
+  bottom: 100px;
+  background: #1e1e1e;
+}
+
+#building-1 {
+  left: 0px;
+}
+
+#building-2 {
+  left: 300px;
+}
+
+#building-3 {
+  left: 900px;
+}
+
+#building-4 {
+  left: 50px;
+}
+
+#building-5 {
+  left: 500px;
+}
+
+#building-6 {
+  left: 1000px;
+}
+
+#building-7 {
+  left: 100px;
+}
+
+#building-8 {
+  left: 350px;
+}
+
+#building-9 {
+  left: 650px;
+}
+
+#building-10 {
+  left: 200px;
+}
+
+#building-11 {
+  left: 750px;
+}
+
+#building-12 {
+  left: 1200px;
+}
+
+@keyframes hijet-drive {
+  from { left: calc(0% - 300px); }
+  to { left: calc(100% + 300px); }
+}
