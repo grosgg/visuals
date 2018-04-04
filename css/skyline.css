@@ -18,6 +18,7 @@ body {
   position: absolute;
   top: 30px;
   right: 40px;
+  box-shadow: 0px 0px 20px #fff;
 }
 
 #road {
@@ -44,8 +45,8 @@ body {
   bottom: 60px;
   left: calc(0% - 300px);
   z-index: 2;
-  animation: hijet-drive 20s infinite;
-  animation-delay: 5s;
+  animation: hijet-drive 30s infinite;
+  animation-delay: 8s;
 }
 
 #hijet-back {
@@ -57,6 +58,24 @@ body {
   background: white;
 }
 
+#hijet-back-window {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background: black;
+}
+
+#hijet-middle-window {
+  width: 38px;
+  height: 26px;
+  position: absolute;
+  top: 2px;
+  left: 30px;
+  background: black;
+}
+
 #hijet-front-top {
   width: 0;
   height: 0;
@@ -65,6 +84,16 @@ body {
   left: 70px;
   border-bottom: 30px solid white;
   border-right: 30px solid transparent;
+}
+
+#hijet-front-window {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 2px;
+  left: 70px;
+  border-bottom: 26px solid black;
+  border-right: 26px solid transparent;
 }
 
 #hijet-front-bottom {
@@ -110,6 +139,38 @@ body {
   border-radius: 50%;
 }
 
+#hijet-heart {
+  background-color: red;
+  display: inline-block;
+  height: 30px;
+  margin: 0 10px;
+  position: relative;
+  top: -40px;
+  left: 25px;
+  width: 30px;
+  animation: heartbeat 1s infinite;
+}
+
+#hijet-heart:before,
+#hijet-heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+#hijet-heart:before {
+  top: -15px;
+  left: 0;
+}
+
+#hijet-heart:after {
+  left: 15px;
+  top: 0;
+}
+
 .big-building {
   width: 150px;
   height: 400px;
@@ -136,6 +197,16 @@ body {
   background: #191919;
 }
 
+.medium-building-window {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffffcc;
+  display: none;
+}
+
 .small-building {
   width: 200px;
   height: 150px;
@@ -144,12 +215,54 @@ body {
   background: #161616;
 }
 
+.small-building-window {
+  width: 25px;
+  height: 5px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ffffcc;
+  display: none;
+}
+
 .love-hotel {
   width: 160px;
   height: 300px;
   position: absolute;
   bottom: 100px;
-  background: #1e1e1e;
+  background: #232323;
+}
+
+.love-hotel-sign {
+  width: 140px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: purple;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  animation: blinker 4s linear infinite;
+}
+
+.love-hotel-window {
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #eeeecc;
+  display: none;
+}
+
+.love-hotel-door {
+  width: 30px;
+  height: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 65px;
+  background-color: #303030;
 }
 
 #building-1 {
@@ -194,13 +307,42 @@ body {
 
 #building-11 {
   left: 750px;
+  z-index: -1;
 }
 
 #building-12 {
   left: 1200px;
 }
 
+#sign-10 {
+  color: pink;
+  animation-delay: 0s;
+}
+
+#sign-11 {
+  color: lightgreen;
+  animation-delay: 1s;
+}
+
+#sign-12 {
+  animation-delay: 1.5s;
+}
+
 @keyframes hijet-drive {
   from { left: calc(0% - 300px); }
-  to { left: calc(100% + 300px); }
+  to { left: calc(100% + 400px); }
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+@keyframes heartbeat
+{
+  0% { transform: scale(.75) rotate(-45deg); }
+  20% { transform: scale(1) rotate(-45deg); }
+  40% { transform: scale(.75) rotate(-45deg); }
+  60% { transform: scale(1) rotate(-45deg); }
+  80% { transform: scale(.75) rotate(-45deg); }
+  100% { transform: scale(.75) rotate(-45deg); }
 }
