@@ -8,24 +8,26 @@ body {
   transition: background 0.5s;
   animation-delay: 0.5s;
   overflow: hidden;
+  font-family: Verdana, Geneva, sans-serif;
+  color: white;
+  text-shadow: 0px 0px 2px black;
+}
+
+a {
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 #menu {
   position: absolute;
   z-index: 10;
-  opacity: 0;
   transition: opacity 0.5s;
-}
-
-#menu:hover {
-  opacity: 1;
+  display: none;
 }
 
 li {
   cursor: pointer;
-  font-style: bold;
   font-size: 14px;
-  color: white;
 }
 
 .pastel {
