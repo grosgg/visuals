@@ -1,9 +1,17 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  for (let i = 0; i < 5000; i++) {
+  for (let i = 0; i < 2000; i++) {
     let blueprint = document.createElement('div');
     blueprint.className = 'dot';
+    // blueprint.style.opacity = Math.floor(Math.random() * 2);
     document.getElementById('container').appendChild(blueprint);
   }
+
+  const dots = Array.prototype.slice.call(document.getElementsByClassName('dot'));
+  setInterval(function() {
+    for (let i = 0; i < 100; i++) {
+      dots[Math.floor(Math.random() * dots.length)].style.opacity = Math.floor(Math.random() * 2);
+    }
+  }, 2000);
 });
 
 function toggleMenu() {
