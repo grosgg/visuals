@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   for (let i = 0; i < 2000; i++) {
     let blueprint = document.createElement('div');
-    blueprint.className = 'dot';
+    blueprint.className = 'dot circle';
     // blueprint.style.opacity = Math.floor(Math.random() * 2);
     document.getElementById('container').appendChild(blueprint);
   }
@@ -43,5 +43,14 @@ function setField(fieldId) {
     case 'color2':
       document.getElementById('body').style.background = field.value;
       break;
+  }
+}
+
+function setCircle(active) {
+  dots = Array.prototype.slice.call(document.getElementsByClassName('dot'));
+  if (!!active) {
+    dots.forEach(function(dot) { dot.classList.add("circle"); });
+  } else {
+    dots.forEach(function(dot) { dot.classList.remove("circle"); });
   }
 }

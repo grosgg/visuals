@@ -11,7 +11,7 @@
   <div id="menu">
     <div>
       <label for="size">Size:</label>
-      <input type="number" id="size" name="size" value="10" min="5" max="100" oninput="setField('size')">
+      <input type="range" id="size" name="size" value="30" min="20" max="100" oninput="setField('size')">
     </div>
     <div>
       <label for="color">Color 1:</label>
@@ -20,6 +20,13 @@
     <div>
       <label for="color">Color 2:</label>
       <input type="color" id="color2" name="color2" value="#000000" oninput="setField('color2')">
+    </div>
+    <div>
+      <input type="radio" id="square" name="shape" value="square" onclick="setCircle(false)">
+      <label for="square">Square</label>
+
+      <input type="radio" id="circle" name="shape" value="circle" onclick="setCircle(true)">
+      <label for="circle">Circle</label>
     </div>
   </div>
 
