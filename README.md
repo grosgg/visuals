@@ -10,8 +10,12 @@
 
 [Aquarium](http://grosgg.github.io/screensavers/aquarium)
 
-## City Skyline
+## Love Trip
 
-[City Skyline](http://grosgg.github.io/screensavers/skyline)
+[Love Trip](http://grosgg.github.io/screensavers/skyline)
+
+## Dot Matrix
+
+[Dot Matrix](http://grosgg.github.io/screensavers/matrix)
 
 Ocean life SVGs by Yu luck from the Noun Project
