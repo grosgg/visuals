@@ -7,7 +7,7 @@
   <script type="text/javascript" src="js/matrix.js"> </script>
 </head>
 <body id="body">
-  <a onclick="toggleMenu()">&#9776;</a>
+  <a id="menu-icon" onclick="toggleMenu()">&#9776;</a>
   <div id="menu">
     <div>
       <label for="size">Size:</label>
@@ -28,6 +28,15 @@
       <input type="radio" id="circle" name="shape" value="circle" onclick="setCircle(true)">
       <label for="circle">Circle</label>
     </div>
+
+    <hr/>
+
+    <ul>
+      <li><a onclick="pickPreset('terminal')">Terminal</a></li>
+      <li><a onclick="pickPreset('bubbletea')">Bubble Tea</a></li>
+      <li><a onclick="pickPreset('random')">Randomize!</a></li>
+    </ul>
+
   </div>
 
   <div id="container"></div>
