@@ -53,3 +53,6 @@ body {
   border-radius: 50%;
 }
 
+.preset {
+  cursor: pointer;
+}

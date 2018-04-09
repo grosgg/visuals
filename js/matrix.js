@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   for (let i = 0; i < 2000; i++) {
     let blueprint = document.createElement('div');
     blueprint.className = 'dot';
+    blueprint.addEventListener('click', function(e) { e.target.style.opacity = 0; });
     document.getElementById('container').appendChild(blueprint);
   }
 
