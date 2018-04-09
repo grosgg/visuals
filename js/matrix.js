@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
   for (let i = 0; i < 2000; i++) {
     let blueprint = document.createElement('div');
-    blueprint.className = 'dot circle';
-    // blueprint.style.opacity = Math.floor(Math.random() * 2);
+    blueprint.className = 'dot';
     document.getElementById('container').appendChild(blueprint);
   }
 
