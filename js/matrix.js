@@ -61,7 +61,13 @@ function pickPreset(preset) {
       setPreset('#246E1D', '#000000', '20', 'square');
       break;
     case 'bubbletea':
-      setPreset('#B27CDB', '#FFF6C9', '40', 'circle');
+      setPreset('#B27CDB', '#FFF6C9', '60', 'circle');
+      break;
+    case 'bubblewrap':
+      setPreset('#E2E3DF', '#C0C0BC', '40', 'circle');
+      break;
+    case 'pudding':
+      setPreset('#945200', '#FFE16F', '80', 'square');
       break;
     case 'random':
       setPreset(
