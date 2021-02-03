@@ -1,5 +1,5 @@
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(400, 400);
   translate(width / 2, height / 2);
   strokeWeight(2);
   
@@ -54,6 +54,7 @@ function setup() {
   endShape();
   noFill();
   
+  fill('white');
   const noseWidth = random(30, 100);
   const noseHeight = random(20, 40);
   beginShape();
@@ -66,8 +67,8 @@ function setup() {
   endShape();
   
   beginShape();
-  for(let x = -width / 8; x < width / 8; x += 40){
-    vertex(x, map(noise(x), 0, 1, -20, 20) + height / 8);
+  for(let x = -width / 8; x < width / 8; x += 25){
+    vertex(x, map(noise(x), 0, 1, -20, 20) + height / 6);
   }
   endShape();
 
