@@ -1,6 +1,7 @@
-xOff = 0;
-yOff = 10000;
-inc = 0.005;
+let xOff = 0;
+let yOff = 10000;
+let zOff = 20000;
+let inc = 0.005;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -11,21 +12,46 @@ function windowResized() {
 }
 
 function draw() {
-  fill(
-    map(noise(xOff), 0, 1, 0, 255),
-    map(noise(yOff), 0, 1, 0, 255),
-    map(noise(xOff) + noise(yOff), 0, 2, 0, 255)
-  );
+  fill('hotpink');
+
+  const nX = noise(xOff);
+  const nY = noise(yOff);
+  const nZ = noise(zOff);
 
   ellipse(
-    map(noise(xOff), 0, 1, 0, width),
-    map(noise(yOff), 0, 1, 0, height),
-    20,
-    20
+    map(nX, 0, 1, 0, width),
+    map(nY, 0, 1, 0, height),
+    map(nZ, 0, 1, 10, 100),
+    map(nZ, 0, 1, 10, 100)
   );
+
+  fill('black');
+  ellipse(
+    map(nX, 0, 1, 0, width) - map(nZ, 0, 1, 5, 50) / 4,
+    map(nY, 0, 1, 0, height) - map(nZ, 0, 1, 5, 50) / 4,
+    map(nZ, 0, 1, 1, 10),
+    map(nZ, 0, 1, 1, 10)
+  );
+  ellipse(
+    map(nX, 0, 1, 0, width) + map(nZ, 0, 1, 5, 50) / 4,
+    map(nY, 0, 1, 0, height) - map(nZ, 0, 1, 5, 50) / 4,
+    map(nZ, 0, 1, 1, 10),
+    map(nZ, 0, 1, 1, 10)
+  );
+
+  arc(
+    map(nX, 0, 1, 0, width),
+    map(nY, 0, 1, 0, height),
+    map(nZ, 0, 1, 5, 50) / 1.5,
+    map(nZ, 0, 1, 5, 50) / 1.5,
+    0,
+    PI,
+    CHORD);
+
 
   xOff += inc;
   yOff += inc;
+  zOff += inc;
 }
 
 function mousePressed() {
