@@ -1,7 +1,8 @@
 # Screensavers
+- [Rain](https://sabu.fr/screensavers/rain) 2021
 - [Glowing Maze](https://sabu.fr/screensavers/glowing_maze) 2021
 - [Face Generator](https://sabu.fr/screensavers/faces) 2021
-- [Worm](https://sabu.fr/screensavers/worm) 2021
+- [Creepy Worm](https://sabu.fr/screensavers/worm) 2021
 - [Dot Matrix](https://sabu.fr/screensavers/matrix) 2019
 - [Love Trip](https://sabu.fr/screensavers/skyline) 2018
 - [Aquarium](https://sabu.fr/screensavers/aquarium) 2017
