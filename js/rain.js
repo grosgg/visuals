@@ -51,6 +51,6 @@ function keyPressed() {
   }
 }
 
-function mousePressed() {
+function mouseClicked() {
   rainSound.isPlaying() ? rainSound.pause() : rainSound.play();
 }
