@@ -16,7 +16,7 @@ body {
   position: absolute;
   top: 20%;
   right: calc(0% - 100px);
-  background: url(../images/tuna.svg);
+  background: url(./tuna.svg);
   background-size: contain;
   animation: tuna-swim 15s infinite;
 }
@@ -27,7 +27,7 @@ body {
   position: absolute;
   top: 0%;
   left: calc(0% - 150px);
-  background: url(../images/turtle.svg);
+  background: url(./turtle.svg);
   background-size: contain;
   transform: scaleX(-1);
   animation: turtle-swim 40s infinite;
@@ -40,7 +40,7 @@ body {
   position: absolute;
   bottom: 15%;
   left: calc(0% - 160px);
-  background: url(../images/fugu.svg);
+  background: url(./fugu.svg);
   background-size: contain;
   transform: scaleX(-1);
   animation: fugu-swim 30s infinite;
@@ -53,7 +53,7 @@ body {
   position: absolute;
   top: 30%;
   right: calc(0% - 800px);
-  background: url(../images/sperm_whale.svg);
+  background: url(./sperm_whale.svg);
   background-size: contain;
   animation: sperm-whale-swim 60s infinite;
   animation-delay: 20s;
@@ -64,7 +64,7 @@ body {
   height: 70px;
   position: absolute;
   bottom: 0%;
-  background: url(../images/coral.svg);
+  background: url(./coral.svg);
   background-size: contain;
 }
 
@@ -73,7 +73,7 @@ body {
   height: 70px;
   position: absolute;
   bottom: 0%;
-  background: url(../images/seaweed.svg);
+  background: url(./seaweed.svg);
   background-size: contain;
 }
 

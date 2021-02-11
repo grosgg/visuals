@@ -5,7 +5,7 @@ let offset = 0;
 let rainSound;
 
 function preload() {
-  rainSound = loadSound('sounds/rain_loop.mp3');
+  rainSound = loadSound('./rain_loop.mp3');
 }
 
 function setup() {
