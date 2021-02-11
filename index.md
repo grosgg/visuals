@@ -1,4 +1,4 @@
-# Visuals
+## Experiments
 - [Rain](./rain/) 2021
 - [Glowing Maze](./glowing_maze/) 2021
 - [Face Generator](./faces/) 2021
@@ -8,5 +8,5 @@
 - [Aquarium](./aquarium/) 2017
 - [Colors](./colors/) 2017
 
-# Credits
+## Credits
 Ocean life SVGs by Yu luck from the Noun Project
