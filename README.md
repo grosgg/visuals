@@ -1,4 +1,5 @@
 # Visuals
+- [Recluse](./recluse/) 2021
 - [Rain](./rain/) 2021
 - [Glowing Maze](./glowing_maze/) 2021
 - [Face Generator](./faces/) 2021
