@@ -3,8 +3,8 @@ class Mountain {
     { red: 180, green: 70, blue: 0, factorRed: 25, factorGreen: 10, factorBlue: 0 }, // orange
     { red: 60, green: 120, blue: 60, factorRed: 5, factorGreen: 20, factorBlue: 5 }, // green
     // { red: 0, green: 40, blue: 160, factorRed: 0, factorGreen: 10, factorBlue: 20 }, // blue
-    // { red: 250, green: 250, blue: 250, factorRed: 20, factorGreen: 20, factorBlue: 20 }, // white
-    // { red: 250, green: 180, blue: 190, factorRed: 20, factorGreen: 20, factorBlue: 20 }, // pink
+    { red: 250, green: 250, blue: 250, factorRed: 10, factorGreen: 10, factorBlue: 10 }, // white
+    { red: 250, green: 180, blue: 190, factorRed: 10, factorGreen: 10, factorBlue: 10 }, // pink
   ];
   constructor(layer, colorPreset) {
     const dim = height;

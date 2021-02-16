@@ -75,6 +75,6 @@ class Smoke {
   move(i) {
     this.y -= 3;
     this.x += map(noise(this.y+this.n), 0, 1, -2, 2);
-    this.alpha -= 0.4;
+    this.alpha -= 0.5;
   }
 }

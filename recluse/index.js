@@ -33,7 +33,8 @@ function setup() {
 
 function draw() {
   background(255); // Reset background
-  background(100, 0, 220, 150);
+  // background(100, 0, 220, 150); //purple
+  background(0, 100, 230, 150); // blue
 
   mountains.forEach((m) => m.show());
 
@@ -45,3 +46,7 @@ function draw() {
   // text(frameRate(), 5, 30);
 }
 
+function doubleClicked() {
+  let fs = fullscreen();
+  fullscreen(!fs);
+}
