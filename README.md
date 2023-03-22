@@ -1,4 +1,5 @@
 # Visuals
+- [Wave Function Collapse Study](./wfc/) 2023
 - [Recluse](./recluse/) 2021
 - [Rain](./rain/) 2021
 - [Glowing Maze](./glowing_maze/) 2021
