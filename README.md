@@ -1,5 +1,6 @@
 # Visuals
-- [Wave Function Collapse Study](./wfc/) 2023
+- [Wave Function Collapse Study 2 (Automatic neighbors definition by color)](./wfc02/) 2023
+- [Wave Function Collapse Study 1 (Manual neighbors definition)](./wfc01/) 2023
 - [Recluse](./recluse/) 2021
 - [Rain](./rain/) 2021
 - [Glowing Maze](./glowing_maze/) 2021
