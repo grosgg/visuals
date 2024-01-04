@@ -35,7 +35,7 @@ const TILES : Tile[] = []
 const CELLS : Cell[] = []
 
 function preload() {
-  for (let i = 0; i <= 23; i++) {
+  for (let i = 0; i <= 11; i++) {
     IMAGES.push(loadImage(`images/wfc_rr${i.toString().padStart(2, "0")}.png`)) 
   }
 }
