@@ -1,5 +1,5 @@
 # Visuals
-- [Infinite Countryside)](./infinite_countryside/) 2024
+- [Infinite Countryside](./infinite_countryside/) 2024
 - [Wave Function Collapse Study 2 (Automatic neighbors definition by color)](./wfc02/) 2023
 - [Wave Function Collapse Study 1 (Manual neighbors definition)](./wfc01/) 2023
 - [Recluse](./recluse/) 2021
