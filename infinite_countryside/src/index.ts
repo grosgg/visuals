@@ -1,6 +1,6 @@
 const TILE_SIZE: number = 32
-const GRID_WIDTH: number = 10
-const GRID_HEIGHT: number = 17
+const GRID_WIDTH: number = 8
+const GRID_HEIGHT: number = 10
 
 let vOffset: number = 0
 let colorLayer: p5.Graphics
@@ -12,8 +12,19 @@ let imgBush: p5.Image
 let imgPine: p5.Image
 let imgPines: p5.Image
 let imgHouse: p5.Image
+let imgHouses: p5.Image
+let imgBuilding: p5.Image
 
-enum TileName { Empty, Grass, Bush, Pine, Pines, House }
+enum TileName {
+  Empty,
+  Grass,
+  Bush,
+  Pine,
+  Pines,
+  House,
+  Houses,
+  Building,
+}
 const TILENAMES : TileName[] = [
   TileName.Empty,
   TileName.Grass,
@@ -21,6 +32,8 @@ const TILENAMES : TileName[] = [
   TileName.Pine,
   TileName.Pines,
   TileName.House,
+  TileName.Houses,
+  TileName.Building,
 ]
 
 interface Tile {
@@ -48,6 +61,8 @@ function preload() {
   imgPine = loadImage("images/forest/pine.png")
   imgPines = loadImage("images/forest/pines.png")
   imgHouse = loadImage("images/house/house.png")
+  imgHouses = loadImage("images/house/houses.png")
+  imgBuilding = loadImage("images/house/building.png")
 }
 
 function setup() {
@@ -75,10 +90,6 @@ function setup() {
       square(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE)
     }
   }
-
-  const seedCell: Cell = CELLS[1]
-  seedCell.choices = [TileName.Empty]
-  collapseCell(seedCell)
 }
 
 function draw() {
@@ -121,10 +132,10 @@ function initTiles() {
   TILES.push({
     name: TileName.Empty,
     image: imgEmpty,
-    up: [TileName.Empty, TileName.Grass, TileName.Pine, TileName.House],
-    right: [TileName.Empty, TileName.Grass, TileName.Pine, TileName.House],
-    down: [TileName.Empty, TileName.Grass, TileName.Pine, TileName.House],
-    left: [TileName.Empty, TileName.Grass, TileName.Pine, TileName.House],
+    up: [TileName.Empty, TileName.Grass, TileName.Pine, TileName.House, TileName.Houses, TileName.Building],
+    right: [TileName.Empty, TileName.Grass, TileName.Pine, TileName.House, TileName.Houses],
+    down: [TileName.Empty, TileName.Grass, TileName.Pine, TileName.House, TileName.Houses, TileName.Building],
+    left: [TileName.Empty, TileName.Grass, TileName.Pine, TileName.House, TileName.Houses],
   },{
     name: TileName.Grass,
     image: imgGrass,
@@ -157,9 +168,23 @@ function initTiles() {
     name: TileName.House,
     image: imgHouse,
     up: [TileName.Empty],
-    right: [TileName.Empty, TileName.House],
+    right: [TileName.Empty, TileName.Houses, TileName.Building],
     down: [TileName.Empty],
-    left: [TileName.Empty, TileName.House],
+    left: [TileName.Empty, TileName.Houses, TileName.Building],
+  },{
+    name: TileName.Houses,
+    image: imgHouses,
+    up: [TileName.Empty],
+    right: [TileName.Empty, TileName.House, TileName.Building],
+    down: [TileName.Empty],
+    left: [TileName.Empty, TileName.House, TileName.Building],
+  },{
+    name: TileName.Building,
+    image: imgBuilding,
+    up: [TileName.Empty],
+    right: [TileName.House, TileName.Houses, TileName.Building],
+    down: [TileName.Empty],
+    left: [TileName.House, TileName.Houses, TileName.Building],
   })
 }
 
