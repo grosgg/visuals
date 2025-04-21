@@ -1,4 +1,5 @@
 # Visuals
+- [Dithering Shader](./dithering/) 2025
 - [Medieval Towers](./medieval_towers/) 2024
 - [Infinite Countryside](./infinite_countryside/) 2024
 - [Wave Function Collapse Study 2 (Automatic neighbors definition by color)](./wfc02/) 2023
