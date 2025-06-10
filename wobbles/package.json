@@ -1,0 +1,13 @@
+{
+  "name": "wfc",
+  "version": "0.0.1",
+  "description": "Hallway",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "grosgg",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/p5": "^1.5.0"
+  }
+}

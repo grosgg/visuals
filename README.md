@@ -1,4 +1,5 @@
 # Visuals
+- [Wobbles](./wobbles/) 2025
 - [Hallway](./hallway/) 2025
 - [Dithering Shader](./dithering/) 2025
 - [Medieval Towers](./medieval_towers/) 2024
