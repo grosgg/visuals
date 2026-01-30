@@ -9,9 +9,9 @@ import {
 import { createMonolith } from './objects/monolith';
 
 // Types for iOS permission (not standard in TS yet)
-interface DeviceOrientationEventiOS extends DeviceOrientationEvent {
-  requestPermission?: () => Promise<'granted' | 'denied'>;
-}
+// interface DeviceOrientationEventiOS extends DeviceOrientationEvent {
+//   requestPermission?: () => Promise<'granted' | 'denied'>;
+// }
 
 class App {
   private scene: THREE.Scene;

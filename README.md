@@ -1,4 +1,5 @@
 # Visuals
+- [Monoliths](./monoliths/dist/) 2026
 - [Island Map](./map_01/) 2025
 - [Wobbles](./wobbles/) 2025
 - [Hallway](./hallway/) 2025
