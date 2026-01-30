@@ -53,8 +53,8 @@ class App {
     sun.position.set(10, 20, 0);
     sun.castShadow = true;
     // Optimize shadow quality
-    sun.shadow.mapSize.width = 1024; // Default is 512
-    sun.shadow.mapSize.height = 1024;
+    sun.shadow.mapSize.width = 256; // Default is 512
+    sun.shadow.mapSize.height = 256;
     sun.shadow.camera.near = 1;
     sun.shadow.camera.far = 100;
 
