@@ -2,7 +2,7 @@ import * as THREE from 'three';
 
 export const createMonolith = (x: number, z: number) => {
   const width = 1 + Math.random() * 8;
-  const height = 1 + Math.random() * 30;
+  const height = 1 + Math.random() * 20;
   const geometry = new THREE.BoxGeometry(width, height, width);
 
   const color = new THREE.Color("hsla(0, 0%, 63%, 0.32)");

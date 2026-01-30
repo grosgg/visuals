@@ -32,7 +32,6 @@ class App {
 
     // 3. Shadow
     this.renderer.shadowMap.enabled = true;
-    this.renderer.shadowMap.type = THREE.PCFSoftShadowMap; // Softer, nicer shadows
 
     // 4. Stereo Effect (Eye split)
     this.effect = new StereoEffect(this.renderer);
@@ -51,19 +50,19 @@ class App {
 
     // Add a bright directional light (like the sun) to create shadows and highlights
     const sun = new THREE.DirectionalLight(0xffffff, 1);
-    sun.position.set(10, 10, 7);
+    sun.position.set(10, 20, 0);
     sun.castShadow = true;
     // Optimize shadow quality
-    sun.shadow.mapSize.width = 4096; // Default is 512
-    sun.shadow.mapSize.height = 4096;
+    sun.shadow.mapSize.width = 1024; // Default is 512
+    sun.shadow.mapSize.height = 1024;
     sun.shadow.camera.near = 1;
-    sun.shadow.camera.far = 40;
+    sun.shadow.camera.far = 100;
 
     // This defines the "box" that shadows are calculated in
-    sun.shadow.camera.left = -40;
-    sun.shadow.camera.right = 40;
-    sun.shadow.camera.top = 40;
-    sun.shadow.camera.bottom = -40;
+    sun.shadow.camera.left = -100;
+    sun.shadow.camera.right = 100;
+    sun.shadow.camera.top = 100;
+    sun.shadow.camera.bottom = -100;
     this.scene.add(sun);
 
     // Ground
