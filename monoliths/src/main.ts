@@ -54,16 +54,16 @@ class App {
     sun.position.set(10, 10, 7);
     sun.castShadow = true;
     // Optimize shadow quality
-    sun.shadow.mapSize.width = 10240; // Default is 512
-    sun.shadow.mapSize.height = 10240;
-    sun.shadow.camera.near = 0.5;
-    sun.shadow.camera.far = 100;
+    sun.shadow.mapSize.width = 4096; // Default is 512
+    sun.shadow.mapSize.height = 4096;
+    sun.shadow.camera.near = 1;
+    sun.shadow.camera.far = 40;
 
     // This defines the "box" that shadows are calculated in
-    sun.shadow.camera.left = -100;
-    sun.shadow.camera.right = 100;
-    sun.shadow.camera.top = 100;
-    sun.shadow.camera.bottom = -100;
+    sun.shadow.camera.left = -40;
+    sun.shadow.camera.right = 40;
+    sun.shadow.camera.top = 40;
+    sun.shadow.camera.bottom = -40;
     this.scene.add(sun);
 
     // Ground
