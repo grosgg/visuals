@@ -31,7 +31,7 @@ class App {
     document.body.appendChild(this.renderer.domElement);
 
     // 3. Shadow
-    this.renderer.shadowMap.enabled = true;
+    // this.renderer.shadowMap.enabled = true;
 
     // 4. Stereo Effect (Eye split)
     this.effect = new StereoEffect(this.renderer);
