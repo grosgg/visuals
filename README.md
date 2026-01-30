@@ -1,5 +1,5 @@
 # Visuals
-- Monoliths 2026
+- [Monoliths](https://monoliths.netlify.app/) 2026
 - [Island Map](./map_01/) 2025
 - [Wobbles](./wobbles/) 2025
 - [Hallway](./hallway/) 2025

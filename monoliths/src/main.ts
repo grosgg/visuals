@@ -8,11 +8,6 @@ import {
 
 import { createMonolith } from './objects/monolith';
 
-// Types for iOS permission (not standard in TS yet)
-// interface DeviceOrientationEventiOS extends DeviceOrientationEvent {
-//   requestPermission?: () => Promise<'granted' | 'denied'>;
-// }
-
 class App {
   private scene: THREE.Scene;
   private camera: THREE.PerspectiveCamera;
@@ -35,7 +30,11 @@ class App {
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(this.renderer.domElement);
 
-    // 3. Stereo Effect (Eye split)
+    // 3. Shadow
+    this.renderer.shadowMap.enabled = true;
+    this.renderer.shadowMap.type = THREE.PCFSoftShadowMap; // Softer, nicer shadows
+
+    // 4. Stereo Effect (Eye split)
     this.effect = new StereoEffect(this.renderer);
     this.effect.setEyeSeparation(0.064);
 
@@ -52,7 +51,19 @@ class App {
 
     // Add a bright directional light (like the sun) to create shadows and highlights
     const sun = new THREE.DirectionalLight(0xffffff, 1);
-    sun.position.set(5, 10, 7);
+    sun.position.set(10, 10, 7);
+    sun.castShadow = true;
+    // Optimize shadow quality
+    sun.shadow.mapSize.width = 10240; // Default is 512
+    sun.shadow.mapSize.height = 10240;
+    sun.shadow.camera.near = 0.5;
+    sun.shadow.camera.far = 100;
+
+    // This defines the "box" that shadows are calculated in
+    sun.shadow.camera.left = -100;
+    sun.shadow.camera.right = 100;
+    sun.shadow.camera.top = 100;
+    sun.shadow.camera.bottom = -100;
     this.scene.add(sun);
 
     // Ground
@@ -64,7 +75,7 @@ class App {
     this.scene.add(ground);
 
     // Grid Helper
-    const grid = new THREE.GridHelper(100, 50, 0x777777, 0x777777);
+    const grid = new THREE.GridHelper(100, 50, 0x666666, 0x666666);
     grid.position.y = 0.01;
     this.scene.add(grid);
 
